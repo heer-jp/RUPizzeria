@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/hawaiinPizza"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="176dp"
+        android:contentDescription="@string/hawaiian_pizza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/deluxePizza"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hawaiian"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/pepperoniPizza"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="204dp"
+        android:contentDescription="@string/pepperoni_pizza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pepperonipizza" />
+
+    <ImageView
+        android:id="@+id/deluxePizza"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="220dp"
+        android:contentDescription="@string/deluxe_pizza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/deluxe" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="242dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck"
+        android:importantForAutofill="no" />
+
+    <ImageView
+        android:id="@+id/currentOrder"
+        android:layout_width="111dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="28dp"
+        android:contentDescription="@string/current_order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.844"
+        app:layout_constraintStart_toEndOf="@+id/storeOrders"
+        app:srcCompat="@drawable/cart" />
+
+    <ImageView
+        android:id="@+id/storeOrders"
+        android:layout_width="114dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="28dp"
+        android:contentDescription="@string/store_orders"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/store" />
+
+    <TextView
+        android:id="@+id/pick_pizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="158dp"
+        android:text="@string/pick_pizza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+    <TextView
+        android:id="@+id/deluxeText"
+        android:layout_width="48dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="91dp"
+        android:text="@string/deluxe_pizza"
+        app:layout_constraintEnd_toStartOf="@+id/hawaiianText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deluxePizza" />
+
+    <TextView
+        android:id="@+id/hawaiianText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="88dp"
+        android:text="@string/hawaiian_pizza"
+        app:layout_constraintEnd_toStartOf="@+id/pepperoniText"
+        app:layout_constraintTop_toBottomOf="@+id/hawaiinPizza" />
+
+    <TextView
+        android:id="@+id/pepperoniText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="33dp"
+        android:text="@string/PEPPERONI"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pepperoniPizza" />
+
+    <TextView
+        android:id="@+id/storeOrdersText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="7dp"
+        android:text="@string/store_orders"
+        app:layout_constraintBottom_toTopOf="@+id/storeOrders"
+        app:layout_constraintEnd_toStartOf="@+id/currentOrderText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/currentOrderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/current_order"
+        app:layout_constraintBottom_toTopOf="@+id/currentOrder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/storeOrdersText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
